@@ -13,7 +13,7 @@ private:
 
 public:
     Computadora();
-    Computadora(std::string& modelo, std::string& so, std::string& ram, std::string& procesador);
+    Computadora(const std::string& modelo, const std::string& so, const std::string& ram, const std::string& procesador);
 
     std::string getSo();
     std::string getRam();
