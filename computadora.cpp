@@ -49,9 +49,21 @@ void Computadora::setProcesador(string& s){
 }
 
 // toString
-void Computadora::toString(){
-    cout << "** COMPUTADORA **" << endl;
-    cout << "Sistema Operativo: " << so << endl;
-    cout << "Memoria RAM: " << ram << endl;
-    cout << "Procesador: " << procesador << endl;
+string Computadora::toString(){
+    string s = "";
+    s += "** COMPUTADORA **\n";
+    s += "Modelo: ";
+    s += modelo;
+    s += "\n";
+    s += "Sistema Operativo: ";
+    s += so;
+    s += "\n";
+    s += "Memoria RAM: ";
+    s += ram;
+    s += "\n";
+    s += "Procesador: ";
+    s += procesador;
+    s += "\n";
+
+    return s;
 }

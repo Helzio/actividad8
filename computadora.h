@@ -20,13 +20,13 @@ public:
     std::string getModelo();
     std::string getProcesador();
 
-    void setSo(std::string&);
-    void setRam(std::string&);
-    void setModelo(std::string&);
-    void setProcesador(std::string&);
+    void setSo(const std::string&);
+    void setRam(const std::string&);
+    void setModelo(const std::string&);
+    void setProcesador(const std::string&);
 
 
-    void toString();
+    std::string toString();
 };
 
 #endif
