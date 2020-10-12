@@ -32,19 +32,19 @@ string Computadora::getProcesador(){
 
 // setters
 
-void Computadora::setSo(string& s){
+void Computadora::setSo(const string& s){
     so = s;
 }
 
-void Computadora::setRam(string& s){
+void Computadora::setRam(const string& s){
     ram = s;
 }
 
-void Computadora::setModelo(string& s){
+void Computadora::setModelo(const string& s){
     modelo = s;
 }
 
-void Computadora::setProcesador(string& s){
+void Computadora::setProcesador(const string& s){
     procesador = s;
 }
 
