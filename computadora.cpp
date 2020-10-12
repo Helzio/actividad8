@@ -6,7 +6,7 @@ Computadora::Computadora(){
 
 }
 
-Computadora::Computadora(string& so, string& ram, string& modelo, string& procesador){
+Computadora::Computadora(const string& so, const string& ram, const string& modelo, const string& procesador){
     this->modelo = modelo;
     this->so = so;
     this->ram = ram;
