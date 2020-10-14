@@ -1,5 +1,8 @@
 #include "computadora.h"
 #include "laboratorio.h"
+#include <iostream>
+
+using namespace std;
 
 int main(){
     Laboratorio lab = Laboratorio();
@@ -16,22 +19,21 @@ int main(){
     c2.setRam("16GB");
     c2.setProcesador("8th-generation Intel Core i7");
 
-    Computadora c3 = Computadora();
+    /* Computadora c3 = Computadora();
     c3.setModelo("Huawei MateBook 13");
     c3.setSo("Windows 10");
     c3.setRam("8GB");
-    c3.setProcesador("8th-generation Intel Core i7");
+    c3.setProcesador("8th-generation Intel Core i7"); */
+
+    Computadora c3;
+    cin >> c3;
 
     Computadora c4 = Computadora("MacBook Pro (16-inch, 2019)", "MacOs Catalina", "64GB", "9th-generation Intel Core i7");
     Computadora c5 = Computadora("Alienware Area-51m", "Windows 10", "64GB", "Intel Core i9-9900K ");
-    Computadora c6 = Computadora("Microsoft Surface Laptop 3", "Windows 10", "16GB", "Intel Core i7");
+    //Computadora c6 = Computadora("Microsoft Surface Laptop 3", "Windows 10", "16GB", "Intel Core i7");
 
-    lab.agregarComputadora(c1);
-    lab.agregarComputadora(c2);
-    lab.agregarComputadora(c3);
-    lab.agregarComputadora(c4);
-    lab.agregarComputadora(c5);
-    lab.agregarComputadora(c6);
+    //lab << c1 << c2 << c3 << c4 << c5 << c6;
+    lab << c1 << c2 << c3 << c4 << c5;
 
     lab.mostrarComputadoras();
 

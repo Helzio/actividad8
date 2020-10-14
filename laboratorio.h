@@ -10,8 +10,13 @@ private:
     size_t contador;
 public:
     Laboratorio();
-    void agregarComputadora(Computadora&);
+    void agregarComputadora(const Computadora&);
     void mostrarComputadoras();
+
+    friend Laboratorio& operator << (Laboratorio& l, const Computadora &c){
+        l.agregarComputadora(c);
+        return l;
+    }
 };
 
 #endif
