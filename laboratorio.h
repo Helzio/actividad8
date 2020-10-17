@@ -15,6 +15,7 @@ public:
     void mostrarComputadoras();
     void respaldar();
     void respaldar_tabla();
+    void recuperar();
 
     friend Laboratorio& operator << (Laboratorio& l, const Computadora &c){
         l.agregarComputadora(c);

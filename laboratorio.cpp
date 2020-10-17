@@ -69,3 +69,33 @@ void Laboratorio::respaldar_tabla()
     }
     archivo.close();
 }
+void Laboratorio::recuperar()
+{
+    ifstream archivo("laboratorio.txt");
+    if (archivo.is_open())
+    {
+        string linea;
+        Computadora c;
+
+        while (true)
+        {
+            getline(archivo, linea); // modelo
+            if (archivo.eof()) break;
+            c.setModelo(linea);
+
+            getline(archivo, linea); // so
+            c.setSo(linea);
+
+            getline(archivo, linea); // ram
+            c.setRam(linea);
+
+            getline(archivo, linea); // procesador
+            c.setProcesador(linea);
+
+            agregarComputadora(c);
+
+            
+        }
+    }
+    archivo.close();
+}
