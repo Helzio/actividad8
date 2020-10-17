@@ -40,6 +40,7 @@ int main(){
 
     lab.mostrarComputadoras();
     lab.respaldar();
+    lab.respaldar_tabla();
     
     
     return 0;
