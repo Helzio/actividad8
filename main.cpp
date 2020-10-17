@@ -25,8 +25,10 @@ int main(){
     c3.setRam("8GB");
     c3.setProcesador("8th-generation Intel Core i7"); */
 
+    cout << endl << "Añadiendo computadora con cin >>" << endl;
     Computadora c3;
     cin >> c3;
+    cout << endl;
 
     Computadora c4 = Computadora("MacBook Pro (16-inch, 2019)", "MacOs Catalina", "64GB", "9th-generation Intel Core i7");
     Computadora c5 = Computadora("Alienware Area-51m", "Windows 10", "64GB", "Intel Core i9-9900K ");
