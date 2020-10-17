@@ -1,6 +1,7 @@
 #include "computadora.h"
 #include "laboratorio.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -19,16 +20,16 @@ int main(){
     c2.setRam("16GB");
     c2.setProcesador("8th-generation Intel Core i7");
 
-    /* Computadora c3 = Computadora();
+    Computadora c3 = Computadora();
     c3.setModelo("Huawei MateBook 13");
     c3.setSo("Windows 10");
     c3.setRam("8GB");
-    c3.setProcesador("8th-generation Intel Core i7"); */
+    c3.setProcesador("8th-generation Intel Core i7");
 
-    cout << endl << "Añadiendo computadora con cin >>" << endl;
-    Computadora c3;
-    cin >> c3;
-    cout << endl;
+    //cout << endl << "Añadiendo computadora con cin >>" << endl;
+    //Computadora c3;
+    //cin >> c3;
+    //cout << endl;
 
     Computadora c4 = Computadora("MacBook Pro (16-inch, 2019)", "MacOs Catalina", "64GB", "9th-generation Intel Core i7");
     Computadora c5 = Computadora("Alienware Area-51m", "Windows 10", "64GB", "Intel Core i9-9900K ");
@@ -38,6 +39,8 @@ int main(){
     lab << c1 << c2 << c3 << c4 << c5;
 
     lab.mostrarComputadoras();
-
+    lab.respaldar();
+    
+    
     return 0;
 }
